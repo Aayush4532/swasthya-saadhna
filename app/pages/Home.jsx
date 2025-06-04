@@ -4,7 +4,7 @@ import { UserButton } from "@clerk/nextjs";
 
 export default function Home() {
   return (
-    <div className="relative w-screen min-h-screen overflow-auto bg-black">
+    <div className="relative max-w-screen min-h-screen overflow-auto bg-black">
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800 animate-pulse-slow opacity-80" />
       <div className="relative z-10 flex flex-col items-center justify-between w-full px-8">
         {/* Header */}
