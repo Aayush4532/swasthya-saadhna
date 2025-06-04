@@ -5,17 +5,12 @@ import { UserButton } from "@clerk/nextjs";
 export default function Home() {
   return (
     <div className="relative w-screen min-h-screen overflow-auto bg-black">
-      {/* Subtle animated background gradient */}
       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-black to-gray-800 animate-pulse-slow opacity-80" />
-
-      {/* Main content */}
-      <div className="relative z-10 flex flex-col items-center justify-between w-full px-8 py-6">
+      <div className="relative z-10 flex flex-col items-center justify-between w-full px-8">
         {/* Header */}
         <header className="w-full max-w-7xl flex items-center justify-between py-4 mb-6 border-b border-gray-700">
           {/* Logo / Title */}
-          <h1 className="text-teal-400 text-3xl lg:text-4xl font-extrabold tracking-wide drop-shadow-lg">
-            SWASTHYA SAADHNA
-          </h1>
+          <img src="/logo.png" alt="logo" className="rounded-md w-[150px] h-[75px] object-cover"/>
 
           {/* Header Links + UserButton */}
           <div className="flex items-center space-x-8">
