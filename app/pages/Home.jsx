@@ -10,7 +10,11 @@ export default function Home() {
         {/* Header */}
         <header className="w-full max-w-7xl flex items-center justify-between py-4 mb-6 border-b border-gray-700">
           {/* Logo / Title */}
-          <img src="/logo.png" alt="logo" className="rounded-md w-[150px] h-[75px] object-cover"/>
+          <img
+            src="/logo.png"
+            alt="logo"
+            className="rounded-md w-[150px] h-[75px] object-cover"
+          />
 
           {/* Header Links + UserButton */}
           <div className="flex items-center space-x-8">
@@ -30,7 +34,7 @@ export default function Home() {
                 <span className="absolute bottom-0 left-0 h-[2px] bg-teal-400 w-0 group-hover:w-full transition-[width] duration-300" />
               </Link>
               <Link
-                href="/mental-wellness"
+                href="/saadho"
                 className="relative text-white text-lg lg:text-xl font-medium transition-colors group hover:text-teal-400"
               >
                 Mental Wellness
@@ -77,6 +81,7 @@ export default function Home() {
                   text-teal-400 font-semibold
                   hover:text-teal-300
                   transition-colors
+                  cursor-pointer
                 "
               >
                 Search →
@@ -172,17 +177,24 @@ export default function Home() {
             <p className="text-gray-400 text-sm lg:text-base flex-1">
               Real-time availability at local & government pharmacies.
             </p>
-            <button className="
-              mt-6 self-start bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-md px-5 py-2 lg:px-6 lg:py-3
+            <button
+              className="
+              mt-6 self-start bg-teal-500 hover:bg-teal-600 text-white cursor-pointer font-semibold rounded-md px-5 py-2 lg:px-6 lg:py-3
               transition-colors shadow-[0_0_8px_rgba(20,184,166,0.5)]
-            ">
-              Explore → <img src="/flag.png" alt="Indian Flag" className="inline w-5 h-5" />
+            "
+            >
+              Explore →{" "}
+              <img
+                src="/flag.png"
+                alt="Indian Flag"
+                className="inline w-5 h-5"
+              />
             </button>
           </Link>
 
           {/* Health Tracker Card */}
           <Link
-            href="/tracker"
+            href="/swasthya"
             className="
               flex flex-col p-6 lg:p-8 bg-gray-800 bg-opacity-70 border border-gray-700 rounded-md
               hover:border-teal-400 transition-colors
@@ -212,11 +224,18 @@ export default function Home() {
             <p className="text-gray-400 text-sm lg:text-base flex-1">
               Monitor BP, blood sugar & heart rate with intelligent alerts.
             </p>
-            <button className="
-              mt-6 self-start bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-md px-5 py-2 lg:px-6 lg:py-3
+            <button
+              className="
+              mt-6 self-start bg-teal-500 hover:bg-teal-600 cursor-pointer text-white font-semibold rounded-md px-5 py-2 lg:px-6 lg:py-3
               transition-colors shadow-[0_0_8px_rgba(20,184,166,0.5)]
-            ">
-              Go to Tracker → <img src="/flag.png" alt="Indian Flag" className="inline w-5 h-5" />
+            "
+            >
+              Go to Tracker →{" "}
+              <img
+                src="/flag.png"
+                alt="Indian Flag"
+                className="inline w-5 h-5"
+              />
             </button>
           </Link>
         </section>
@@ -224,9 +243,9 @@ export default function Home() {
         {/* Saadhna AI Assistant Card (Full Width) */}
         <section className="w-full max-w-7xl mb-12">
           <Link
-            href="/assistant"
+            href="/saadhna"
             className="
-              flex flex-col p-6 lg:p-8 bg-gray-800 bg-opacity-70 border border-gray-700 rounded-md
+              flex flex-col p-6 lg:p-8 bg-gray-800 bg-opacity-70 border border-gray-700 rounded-md cursor-pointer
               hover:border-teal-400 transition-colors
               shadow-[0_0_22px_rgba(20,184,166,0.3)]
             "
@@ -252,14 +271,21 @@ export default function Home() {
               Saadhna AI Assistant
             </h3>
             <p className="text-gray-300 text-base lg:text-lg flex-1">
-              Upload a prescription and get instant dosage, timing, dietary,
-              and Ayurvedic recommendations from our AI.
+              Upload a prescription and get instant dosage, timing, dietary, and
+              Ayurvedic recommendations from our AI.
             </p>
-            <button className="
-              mt-6 self-start bg-teal-500 hover:bg-teal-600 text-white font-semibold rounded-md px-6 py-2 lg:px-8 lg:py-3
+            <button
+              className="
+              mt-6 self-start bg-teal-500  hover:bg-teal-600 text-white cursor-pointer font-semibold rounded-md px-6 py-2 lg:px-8 lg:py-3
               transition-colors shadow-[0_0_10px_rgba(20,184,166,0.5)]
-            ">
-              Talk to Saadhna → <img src="/flag.png" alt="Indian Flag" className="inline w-5 h-5" />
+            "
+            >
+              Talk to Saadhna →{" "}
+              <img
+                src="/flag.png"
+                alt="Indian Flag"
+                className="inline w-5 h-5"
+              />
             </button>
           </Link>
         </section>
@@ -321,8 +347,8 @@ export default function Home() {
                 Prescription OCR
               </p>
               <p className="text-gray-400 text-sm text-center mt-2">
-                Snap or upload your prescription; our OCR extracts medicines
-                & dosages automatically.
+                Snap or upload your prescription; our OCR extracts medicines &
+                dosages automatically.
               </p>
             </div>
 
@@ -388,7 +414,8 @@ export default function Home() {
         <footer className="w-full max-w-7xl text-center py-6 border-t border-gray-700 mt-8">
           <div className="flex flex-col lg:flex-row items-center justify-between">
             <p className="text-gray-400 text-sm lg:text-base mb-4 lg:mb-0">
-              © {new Date().getFullYear()} Swasthya Saadhna. All rights reserved.
+              © {new Date().getFullYear()} Swasthya Saadhna. All rights
+              reserved.
             </p>
             <div className="flex space-x-6">
               <Link
