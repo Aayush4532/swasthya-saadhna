@@ -147,7 +147,7 @@ export default function Home() {
         <section className="w-full max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-8 my-12">
           {/* Medicine Availability Card */}
           <Link
-            href="/search-medicines"
+            href="/medicineAvailability"
             className="
               flex flex-col p-6 lg:p-8 bg-gray-800 bg-opacity-70 border border-gray-700 rounded-md
               hover:border-teal-400 transition-colors

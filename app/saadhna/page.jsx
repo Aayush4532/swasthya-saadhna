@@ -14,7 +14,6 @@ export default function ChatBox() {
   const endRef = useRef(null);
   const messagesContainerRef = useRef(null);
 
-  // Scroll to bottom on new messages
   useEffect(() => {
     endRef.current?.scrollIntoView({ behavior: 'smooth' });
   }, [messages]);
@@ -44,7 +43,6 @@ export default function ChatBox() {
 
   return (
     <div className="flex flex-col h-screen w-screen bg-gradient-to-br from-[#05070a] via-[#0b0e17] to-black p-4">
-      {/* Message container with custom scrollbar */}
       <div 
         ref={messagesContainerRef}
         className="flex-1 overflow-y-auto mb-4 pb-2 your-scrollable-div"
@@ -77,7 +75,6 @@ export default function ChatBox() {
         <div ref={endRef} />
       </div>
 
-      {/* Input area */}
       <div className="flex items-center bg-[#12141a] rounded-xl p-3 border border-[#2a2d35]">
         <textarea
           className="flex-1 resize-none rounded-xl bg-[#1a1d25] text-gray-200 placeholder-gray-500 p-3 mr-3 focus:outline-none focus:ring-1 focus:ring-[#0084FF]/50 transition-all"
@@ -102,7 +99,6 @@ export default function ChatBox() {
         </button>
       </div>
 
-      {/* Ensure custom scrollbar styles are applied */}
       <style jsx global>{`
         .your-scrollable-div::-webkit-scrollbar {
           width: 9px;

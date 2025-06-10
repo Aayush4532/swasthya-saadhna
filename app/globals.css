@@ -41,7 +41,7 @@ body::-webkit-scrollbar-track,
 /* Scrollbar ka thumb (handle) */
 body::-webkit-scrollbar-thumb,
 .your-scrollable-div::-webkit-scrollbar-thumb {
-  background-color: #1A2B3C; /* Dark navy blue aur black ke beech ka colour */
+  background-color: #05090e; /* Dark navy blue aur black ke beech ka colour */
   border-radius: 10px; /* Thoda golai dene ke liye */
   border: 1px solid #000000; /* Thumb ke around halka border, background colour ka */
 }
